@@ -7,8 +7,9 @@ tags:
 - c
 - wtf
 tumblr_url: http://saji-codes.tumblr.com/post/378257066
+link: http://stackoverflow.com/questions/1995113/strangest-language-feature/2001861
 ---
-Strangest language feature discussion at StackOverflowI must admin that I read mainly C, JavaScript and PHP ones. My favourites:
+I must admin that I read mainly C, JavaScript and PHP ones. My favourites:
 
 C
 

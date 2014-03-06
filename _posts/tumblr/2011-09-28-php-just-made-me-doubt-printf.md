@@ -7,5 +7,5 @@ tags:
 - pritnf
 - phpsux
 tumblr_url: http://saji-codes.tumblr.com/post/10764724643
+link: 'http://ideone.com/oi5qQ'
 ---
-PHP just made me doubt printf. /:
