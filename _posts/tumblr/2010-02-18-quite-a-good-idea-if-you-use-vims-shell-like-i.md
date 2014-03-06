@@ -12,8 +12,8 @@ category: shell
 
 Quite a good idea, if you use vim’s :shell, like I do, is to put this to your .bashrc:
 
-
+```sh
 test -n "$VIMRUNTIME" && PS1="\e[30m(vim shell)\e[0m $PS1"
-
+```
 
 Without this I often ended up forgetting that I’m in vim’s subshell and trying to open files that I’ve had already opened.

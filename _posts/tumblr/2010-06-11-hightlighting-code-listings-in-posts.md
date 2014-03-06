@@ -19,19 +19,22 @@ Google’s Prettify
 
 It’s really straight-forward. Just include this JavaScript and CSS:
 
-
+```html
 <script type="text/javascript" src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
 <link href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css" type="text/css" rel="stylesheet" />
+```
 
 
 
 and call prettyPrint(). You can bind it to onload or put this just before body ending tag:
 
 
+```html
 (…)
 <script type="text/javascript">prettyPrint();</script>
 </body>
 </html>
+```
 
 
 Now put your code listings in <pre class="prettyprint"><code>(…)</code><pre>. And you are set.
@@ -42,8 +45,9 @@ Supported syntaxes
 
 Prettify supports all C-like (including JavaScript, PHP, Java etc.), bash-like and XML-like languages out-of-the box. If you want to use other languages you have to include additional JavaScript file for each one of them, e.g.:
 
-
+```html
 <script type="text/javascript" src="http://google-code-prettify.googlecode.com/svn/trunk/src/lang-css.js"></script>
+```
 
 
 For list of all additional languages look inside prettify repository.

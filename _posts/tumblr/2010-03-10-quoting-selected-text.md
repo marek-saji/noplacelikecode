@@ -9,41 +9,41 @@ tags:
 tumblr_url: http://saji-codes.tumblr.com/post/438224962
 category: javascript
 ---
-
+```js
 /**
  * Selecting text in <article /> will make a button appear,
  * after clicking it selected text will get copied to
  * reply form
  */
-$(''article'').bind(''mouseup'', function(e){
+$('article').bind('mouseup', function(e){
   
     // remove previous instances of the button
-    $(''.quote-this'').remove();
+    $('.quote-this').remove();
   
     // when nothing is selected, do nothing
     if (window.getSelection().isCollapsed)
         return;
 
-    $(''<button />'', {
-        ''class'' : ''quote-this'',
-        ''text'' : ''quote this'',
-        ''title'' : ''use selected text as quotation in a reply'',
-        ''css'' : {
+    $('<button />', {
+        'class' : 'quote-this',
+        'text' : 'quote this',
+        'title' : 'use selected text as quotation in a reply',
+        'css' : {
             // place button on mouse position
-            ''position'': ''absolute'',
-            ''top'': e.pageY + ''px'',
-            ''left'': e.pageX + ''px'',
+            'position': 'absolute',
+            'top': e.pageY + 'px',
+            'left': e.pageX + 'px',
             // avoiding selecting button when double clicking
-            ''margin'': ''1em''
+            'margin': '1em'
         },
         click: function(e){
             e.stopPropagation();
             var sel = window.getSelection();
           
             // place selected text in reply form
-            $(''.reply'').text(
+            $('.reply').text(
                 sel.toString()
-                    .replace(/^\s*|\s*$/g, '''')  // trim
+                    .replace(/^\s*|\s*$/g, '')  // trim
                     .replace(/(\n|^)/g, "$1> ") // add quote markup
             );
           
@@ -51,15 +51,15 @@ $(''article'').bind(''mouseup'', function(e){
             $(this).remove(); // destroy me
          }
     // button.quote-this creation end
-    }).hide() // we''ll show it in a sec.
+    }).hide() // we'll show it in a sec.
         // place somewhere outside element that mousedown
         // is bond to
-        .appendTo(''body'')
+        .appendTo('body')
         // appear misteriously
         .fadeIn();
 
 }); // article mouseup
-​​
+```
 
 
 

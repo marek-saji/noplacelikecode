@@ -13,22 +13,30 @@ I must admin that I read mainly C, JavaScript and PHP ones. My favourites:
 
 C
 
+```c
 a[10] == 10[a]
 "Hello World"[i] == [i]"Hello World"
 a[b][c] == b[c[a]]
 "0123456789abcdef"[x & 0xf]
+```
 
+```c
 #define EVER ;;
 for(EVER){}
+```
 
+```c
 // down to "operator"
 for (x=20 ; x --> 0 ;){}
+```
 
 JavaScript
 
-alert(''2'' + ''1.2'');     // 21.2 (concatenation)
-alert(''2'' - - ''1.2'');   // 3.2 ("cast" to numeric and add)
+```js
+alert('2' + '1.2');     // 21.2 (concatenation)
+alert('2' - - '1.2');   // 3.2 ("cast" to numeric and add)
 alert(~~ -1.7);	        // -1 (removes metric part)
-alert(typeof (+''1''));   // ''numeric'' (casting to "numeric")
+alert(typeof (+'1'));   // 'numeric' (casting to "numeric")
+```
 
 .. and of course JavaScript truth table. {:

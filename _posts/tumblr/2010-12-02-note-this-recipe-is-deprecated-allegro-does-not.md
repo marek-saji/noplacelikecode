@@ -46,13 +46,16 @@ We don’t want to reach allegro.pl. Ever.
    So why not just redirect the trafic to localhost?
    Add this to your /etc/hosts:
 
+```
 127.0.0.1    allegro.pl www.allegro.pl
+```
 
 Redirect traffic to ssl.allegro.pl
 
 While we grabbed the traffic we might as well redirect it to ssl host.
    Create new virtual host in apache:
 
+```apache
 <VirtualHost *:80>
     ServerName "allegro.pl"
     ServerAlias "www.allegro.pl"
@@ -62,6 +65,7 @@ While we grabbed the traffic we might as well redirect it to ssl host.
     RewriteRule ^/direct_login.php    https://ssl.allegro.pl/myaccount/ [L,R,NE]
     RewriteRule ^/?(.*)               https://ssl.allegro.pl/$1 [L,R,NE]
 </VirtualHost>
+```
 
 And voilà.
 You can modify it to use with other sites as well.

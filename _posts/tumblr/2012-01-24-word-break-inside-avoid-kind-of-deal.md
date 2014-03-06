@@ -14,16 +14,19 @@ I’ve spent some time looking for something like word-break-inside: avoid (sort
 Just seemd that’s it’s too trivial thing to use JavaScritpt for that. But actually you can do just that using display: inline-block.
 
 
-
+```html
 <p>
     Licensed under
     <span class="avoid-br">Creative Commons Attribute-ShareAlike 2.0</span>
 </p>
 
-.avoid-br
-{
-    display: inline-block;
-}
+<style>
+  .avoid-br
+  {
+      display: inline-block;
+  }
+</style>
+```
 
 View the code and result.
 
