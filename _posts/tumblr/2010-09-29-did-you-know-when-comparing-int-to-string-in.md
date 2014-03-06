@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ''
+title: Comparing strings and integers
 date: '2010-09-29T10:43:00+02:00'
 tags: 
 tumblr_url: http://saji-codes.tumblr.com/post/1209529680

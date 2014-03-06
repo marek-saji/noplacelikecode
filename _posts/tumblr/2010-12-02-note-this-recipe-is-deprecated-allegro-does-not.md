@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ''
+title: Force HTTPS connection for allegro.pl
 date: '2010-12-02T23:06:00+01:00'
 tags:
 - https

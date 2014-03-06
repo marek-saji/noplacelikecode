@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ''
+title: echo is not different statement, than print
 date: '2010-08-11T00:03:00+02:00'
 tags:
 - php

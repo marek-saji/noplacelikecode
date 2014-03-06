@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ''
+title: Custom signature for different mail accounts in GMail
 date: '2010-08-10T12:02:09+02:00'
 tags: 
 tumblr_url: http://saji-codes.tumblr.com/post/931335358
