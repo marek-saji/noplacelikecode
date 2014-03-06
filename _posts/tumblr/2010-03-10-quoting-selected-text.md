@@ -7,6 +7,7 @@ tags:
 - selection
 - quoting
 tumblr_url: http://saji-codes.tumblr.com/post/438224962
+category: javascript
 ---
 
 /**

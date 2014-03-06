@@ -7,6 +7,7 @@ tags:
 - css3
 - word-break-inside
 tumblr_url: http://saji-codes.tumblr.com/post/16420377169
+category: css
 ---
 I’ve spent some time looking for something like word-break-inside: avoid (sort of an opposite to <wbr /> — a way to avoid breaking words in a inline element, but do that, if it’s longer than a line, just like page-break-inside: avoid does for pages in print). Turns out there’s none.
 

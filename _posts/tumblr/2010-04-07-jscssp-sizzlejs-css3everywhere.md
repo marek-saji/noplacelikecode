@@ -8,5 +8,6 @@ tags:
 - jscssp
 - sizzlejs
 tumblr_url: http://saji-codes.tumblr.com/post/503705061/jscssp-sizzlejs-css3everywhere
+category: css
 ---
 hell, not only css3 — why not custom css extensions?

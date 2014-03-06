@@ -7,6 +7,7 @@ tags:
 - vim
 - ps1
 tumblr_url: http://saji-codes.tumblr.com/post/397067498
+category: shell
 ---
 
 Quite a good idea, if you use vim’s :shell, like I do, is to put this to your .bashrc:

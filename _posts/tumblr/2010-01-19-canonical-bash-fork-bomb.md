@@ -6,6 +6,7 @@ tags:
 - bash
 - fork
 - bomb
+category: shell
 tumblr_url: http://saji-codes.tumblr.com/post/342530511
 ---
 ```sh

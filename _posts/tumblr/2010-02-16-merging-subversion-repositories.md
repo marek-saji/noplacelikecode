@@ -9,6 +9,7 @@ tags:
 - sysadmin
 - ! '*nix'
 tumblr_url: http://saji-codes.tumblr.com/post/393051138
+category: vcs
 ---
 
 Some time ago I tried to create subversion repository for a project that was spread across several of these:

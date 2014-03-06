@@ -6,6 +6,7 @@ tags:
 - php
 - php sux
 tumblr_url: http://saji-codes.tumblr.com/post/4160776672
+category: php
 ---
 PHP sux, that’s not news.
 

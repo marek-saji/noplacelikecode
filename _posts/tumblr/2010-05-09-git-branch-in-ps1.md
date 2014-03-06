@@ -6,6 +6,7 @@ tags:
 - PS1
 - bashrc
 tumblr_url: http://saji-codes.tumblr.com/post/584783770
+category: shell
 ---
 Another nice addition to PS1.
 
