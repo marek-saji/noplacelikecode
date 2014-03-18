@@ -1,4 +1,3 @@
 name: "/* there's no place like code */"
-baseurl: /noplacelikecode
 markdown: redcarpet
 pygments: true
