@@ -3,10 +3,9 @@ layout: post
 title: git branch in PS1
 date: '2010-05-09T21:59:00+02:00'
 tags:
-- PS1
-- bashrc
+- shell
+- ps1
 tumblr_url: http://saji-codes.tumblr.com/post/584783770
-category: shell
 ---
 Another nice addition to PS1.
 

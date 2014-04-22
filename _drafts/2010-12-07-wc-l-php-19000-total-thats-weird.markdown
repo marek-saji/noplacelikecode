@@ -12,4 +12,4 @@ $ wc -l *.php
 19000 total
 ```
 
-That’s… weird. =_=
+That’s… weird. So round, very coincidence. =_=

@@ -2,9 +2,9 @@
 layout: post
 title: show progress when using dd(1)
 date: '2010-09-18T13:47:25+02:00'
-tags: 
+tags:
+- shell
 tumblr_url: http://saji-codes.tumblr.com/post/1142783813
-category: shell
 ---
 
 dd(1) is a tool that you can use for, for example, backup the whole disk partition. Unfortunatelly it does not show progress, so you don’t really know how long will it take.

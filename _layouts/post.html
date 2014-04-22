@@ -10,11 +10,21 @@ layout: default
 </h2>
 <p class=meta>
   <time>{{ page.date | date:"%Y-%m-%d" }}</time>
+  {% if page.tags %}
+    <small class=tags>
+      <p>Tags:</p>
+      <ul>
+        {% for tag in page.tags %}
+          <li>#{{tag}}</li>
+        {% endfor %}
+      </ul>
+    </small>
+  {% endif %}
 </p>
 
 <div class="post">
   {% if page.tumblr_url %}
-    <p>
+    <p class="repost repost__tumblr">
       <small>
         Originally posted at
         <a href="{{ page.tumblr_url }}">saji-codes tumblr</a>.

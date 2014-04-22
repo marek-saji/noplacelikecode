@@ -3,7 +3,7 @@ layout: post
 title: Strangest language feature discussion at StackOverflow
 date: '2010-02-08T17:15:00+01:00'
 tags:
-- js
+- javascript
 - c
 - wtf
 tumblr_url: http://saji-codes.tumblr.com/post/378257066

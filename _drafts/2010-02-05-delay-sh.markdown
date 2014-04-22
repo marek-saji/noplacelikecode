@@ -3,9 +3,8 @@ layout: post
 title: delay.sh
 date: '2010-02-05T00:59:00+01:00'
 tags:
-- sh
+- shell
 tumblr_url: http://saji-codes.tumblr.com/post/371296280
-category: shell
 ---
 ```sh
 #!/bin/sh

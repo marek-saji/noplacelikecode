@@ -6,7 +6,6 @@ tags:
 - php
 - wft
 tumblr_url: http://saji-codes.tumblr.com/post/936442678
-category: php
 ---
 ```php
 <?php

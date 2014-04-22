@@ -3,13 +3,9 @@ layout: post
 title: merging subversion repositories
 date: '2010-02-16T18:48:00+01:00'
 tags:
-- svn
-- merge
-- svndumpfilter
-- sysadmin
-- ! '*nix'
+- subversion
+- vcs
 tumblr_url: http://saji-codes.tumblr.com/post/393051138
-category: vcs
 ---
 
 Some time ago I tried to create subversion repository for a project that was spread across several of these:

@@ -7,5 +7,4 @@ tags:
 - textmate
 tumblr_url: http://saji-codes.tumblr.com/post/1134433700
 link: 'http://www.vim.org/scripts/script.php?script_id=2540'
-category: vim
 ---

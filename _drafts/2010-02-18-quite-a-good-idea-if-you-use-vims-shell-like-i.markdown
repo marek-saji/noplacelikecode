@@ -3,11 +3,10 @@ layout: post
 title: vim subshell indicator in PS1
 date: '2010-02-18T21:17:38+01:00'
 tags:
-- bash
+- shell
 - vim
 - ps1
 tumblr_url: http://saji-codes.tumblr.com/post/397067498
-category: shell
 ---
 
 Quite a good idea, if you use vim’s :shell, like I do, is to put this to your .bashrc:

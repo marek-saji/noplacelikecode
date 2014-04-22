@@ -3,12 +3,9 @@ layout: post
 title: hightlighting code listings in posts
 date: '2010-06-11T15:04:38+02:00'
 tags:
-- code
-- syntax hightlight
-- code hightlight
-- code listings
+- javascript
+- syntaxhightlight
 tumblr_url: http://saji-codes.tumblr.com/post/686957505
-category: javascript
 ---
 
 This blag have some visitors apparently googling for a way to hightlight code listings on their tumblelogs. Just to make it easy for them I thought I’d write on what I’m using.

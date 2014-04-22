@@ -4,9 +4,7 @@ title: call methods of objects crated on-the-fly in PHP
 date: '2011-03-28T17:58:50+02:00'
 tags:
 - php
-- php sux
 tumblr_url: http://saji-codes.tumblr.com/post/4160776672
-category: php
 ---
 PHP sux, that’s not news.
 

@@ -2,7 +2,9 @@
 layout: post
 title: CASSIS
 date: '2010-02-16T19:07:48+01:00'
-tags: 
+tags:
+- javascript
+- php
 tumblr_url: http://saji-codes.tumblr.com/post/393076384
 link: http://tantek.pbworks.com/CassisProject
 ---
