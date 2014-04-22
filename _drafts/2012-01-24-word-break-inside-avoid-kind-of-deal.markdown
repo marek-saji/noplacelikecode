@@ -6,10 +6,11 @@ tags:
 - css
 tumblr_url: http://saji-codes.tumblr.com/post/16420377169
 ---
-I’ve spent some time looking for something like word-break-inside: avoid (sort of an opposite to <wbr /> — a way to avoid breaking words in a inline element, but do that, if it’s longer than a line, just like page-break-inside: avoid does for pages in print). Turns out there’s none.
+I’ve spent some time looking for something like `word-break-inside: avoid` (sort of an opposite to `<wbr />` — a way to avoid breaking words in a inline element, but do that, if it’s longer than a line, just like page-break-inside: avoid does for pages in print). Turns out there’s none.
 
-Just seemd that’s it’s too trivial thing to use JavaScritpt for that. But actually you can do just that using display: inline-block.
+Just seemd that’s it’s too trivial thing to use JavaScritpt for that. But actually you can do just that using `display: inline-block`.
 
+<iframe src="http://dabblet.com/gist/11193537" style="width:100%; height:10em">
 
 ```html
 <p>
@@ -25,5 +26,6 @@ Just seemd that’s it’s too trivial thing to use JavaScritpt for that. But ac
 </style>
 ```
 
-View the code and result.
+<a href="http://dabblet.com/gist/11193537">View the code and result.</a>
 
+</iframe>

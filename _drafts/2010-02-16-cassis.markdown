@@ -5,11 +5,12 @@ date: '2010-02-16T19:07:48+01:00'
 tags:
 - javascript
 - php
+- c
 tumblr_url: http://saji-codes.tumblr.com/post/393076384
 link: http://tantek.pbworks.com/CassisProject
 ---
 
-(..) the goal of the CASSIS Project is universal javascript that works on the client and the server (..) Until typical hosting companies support running javascript on the server, CASSIS code must run in at least two programming language environments, javascript on the client, and something that can be made to resemble javascript on the server (current candidates are PHP, Ruby, and C/C++). This is the goal of CASSIS v0.
+> (…) the goal of the CASSIS Project is universal javascript that works on the client and the server (..) Until typical hosting companies support running javascript on the server, CASSIS code must run in at least two programming language environments, javascript on the client, and something that can be made to resemble javascript on the server (current candidates are PHP, Ruby, and C/C++). This is the goal of CASSIS v0.
 
 ```js
 if ("00"==false) {/*javascript*/} 

@@ -4,5 +4,5 @@ title: Ethercodes combines the Etherpad backend with Skywriter front end.
 date: '2010-09-08T01:55:20+02:00'
 tags: 
 tumblr_url: http://saji-codes.tumblr.com/post/1083570224
-link: 'http://ethercodes.com/'
+link: 'https://web.archive.org/web/20101110003346/http://ethercodes.com/'
 ---

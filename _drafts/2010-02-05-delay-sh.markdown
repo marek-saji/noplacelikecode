@@ -31,7 +31,16 @@ fi
 ```
 
 Delayed execution of a command. I use it, so after I log-in and
-openbox(1) is run, it also runs gnome-session(1) after a while. But I
-have few seconds to cancel.
+[openbox] is run, it also runs [gnome-session(1)] after a while. But
+I have few seconds to cancel.
 
-notify-more is a more advanced replacement for notify-send from libnotify
+[notify-more] is a more advanced replacement for [notify-send(1)] from
+[libnotify].
+
+
+
+[openbox]: http://openbox.org/
+[gnome-session(1)]: http://linux.die.net/man/1/gnome-session
+[notify-more]: https://web.archive.org/web/20071014063333/http://rory.netsoc.ucd.ie/linux/notify-more/
+[notify-send(1)]: http://manpages.debian.org/cgi-bin/man.cgi?query=notify-send
+[libnotify]: http://www.galago-project.org/

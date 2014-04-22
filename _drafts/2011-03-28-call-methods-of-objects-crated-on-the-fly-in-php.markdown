@@ -37,3 +37,7 @@ function k($a, $k){return $a[$k];}
 ```php
 k(array_flip($array), 'key'); // almost like array_flip($array)['key']
 ```
+
+### Update
+
+Newer versions of PHP allows that syntax.

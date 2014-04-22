@@ -8,9 +8,6 @@ tags:
 tumblr_url: http://saji-codes.tumblr.com/post/711105651
 link: http://github.com/tobeytailor/gordon
 ---
-
 An open source Flash™ runtime written in pure JavaScript.
 
-
-
-Not yet production quality, but.. wow.
+Not yet production quality, but… wow.

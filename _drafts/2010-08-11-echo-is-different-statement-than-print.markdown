@@ -1,6 +1,6 @@
 ---
 layout: post
-title: echo is not different statement, than print
+title: echo is different statement, than print
 date: '2010-08-11T00:03:00+02:00'
 tags:
 - php
@@ -25,7 +25,7 @@ true && print 'ok';
 
 works just fine
 
-update
+### Update
 
 ```php
 <?php

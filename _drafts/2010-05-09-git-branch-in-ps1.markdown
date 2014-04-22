@@ -37,5 +37,4 @@ PS1_git_branch() {
 PS1="\$(PS1_git_branch)$PS1"
 ```
 
-
 original idea from github guides

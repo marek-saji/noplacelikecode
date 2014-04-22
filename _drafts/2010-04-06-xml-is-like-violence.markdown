@@ -8,5 +8,5 @@ tags:
 tumblr_url: http://saji-codes.tumblr.com/post/499335236
 ---
 > XML is like violence - if it doesn’t solve your problems, you are not using enough of it.
-> 
+>
 > — <cite>nokogiri.org</cite>

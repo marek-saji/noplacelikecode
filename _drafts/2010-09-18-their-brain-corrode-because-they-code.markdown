@@ -7,6 +7,10 @@ tags:
 tumblr_url: http://saji-codes.tumblr.com/post/1140191855
 url: http://www.youtube.com/watch?v=Eq3CuMDXaPs
 ---
-their brain corrode.
+<div class='embed-container'>
+  <iframe src='http://www.youtube.com/embed/Eq3CuMDXaPs' frameborder='0' allowfullscreen></iframe>
+</div>
 
-because they code
+> their brain corrode.
+>
+> because they code
