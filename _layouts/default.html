@@ -1,24 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html prefix="og: http://ogp.me/ns#">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+        <title>
+          {% if page.title %}{{ page.title | xml_escape }}{% endif %}
+          {{ site.name | xml_escape }}
+        </title>
+        <meta property=og:title content="
+          {% if page.title %}{{ page.title | xml_escape }}{% endif %}
+          {{ site.name | xml_escape }}
+        " />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="css/syntax.css">
+        <link rel="stylesheet" href="/css/syntax.css">
 
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="/css/main.css">
 
     </head>
     <body>
 
         <div class="site">
           <div class="header">
-            <h1 class="title"><a href="{{ site.baseurl }}">{{ site.name }}</a></h1>
-            <a class="extra" href="{{ site.baseurl }}">home</a>
+            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
             {% if site.slogan %}
               <p>
                 {{ site.slogan }}
