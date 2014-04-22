@@ -19,6 +19,11 @@
           <div class="header">
             <h1 class="title"><a href="{{ site.baseurl }}">{{ site.name }}</a></h1>
             <a class="extra" href="{{ site.baseurl }}">home</a>
+            {% if site.slogan %}
+              <p>
+                {{ site.slogan }}
+              </p>
+            {% endif %}
           </div>
 
           {{ content }}
