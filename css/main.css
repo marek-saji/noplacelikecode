@@ -84,12 +84,17 @@ q
   {
     font-size: 4em;
     line-height: 1em;
+    font-weight: normal;
   }
     .header__title a
     {
       text-decoration: none;
-      color: mediumturquoise;
+      color: #900;
     }
+      .header__title b
+      {
+        font-family: Source Code Pro, monospace;
+      }
   .header__title,
   .header__slogan
   {
