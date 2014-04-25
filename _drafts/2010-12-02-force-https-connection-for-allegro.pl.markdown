@@ -7,7 +7,10 @@ tags:
 - ssl
 tumblr_url: http://saji-codes.tumblr.com/post/2074488121
 ---
-NOTE: this recipe is deprecated; allegro does not allow to view all pages via https://ssl.allegro.pl anymore and just redirects to plain http.
+<ins class=block>
+  Update:
+  this recipe is deprecated; allegro does not allow to view all pages via <tt>https://ssl.allegro.pl</tt> anymore and just redirects to plain http.
+</ins>
 
 With starting to use WiFi on my new laptop I stareted to be a little paranoid.
 I was forcing https connections for some sites with
@@ -16,18 +19,18 @@ While it works great for sites that has http and https set on
 the same domain (google.com, facebook.com, twitter.com),
 it did not for allegro.pl (polish auctions portal).
 
-Allegro uses https://ssl.allegro.pl/ for signing-in,
-sets non-secure cookie there and redirects to http://allegro.pl/
+Allegro uses <tt>https://ssl.allegro.pl/</tt> for signing-in,
+sets non-secure cookie there and redirects to <tt>http://allegro.pl/</tt>
 allowing session hijacking. But whole content is available
-via https://ssl.allegro.pl/.
+via <tt>https://ssl.allegro.pl/</tt>.
 
 At first I tried to use
-"[Force encryption for all the cookies set over HTTPS..][NoScriptQ6.4]"
+<q>[Force encryption for all the cookies set over HTTPS..][NoScriptQ6.4]</q>
 feature of NoScript, but it did not work — after logging in via https
 (and setting some secure cookies),
 I was logged in in http as well.
 
-Maybe allegro.pl is setting non-secure cookies on http basing on GET attributes?
+Maybe allegro.pl is setting non-secure cookies on http basing on <tt>GET</tt> attributes?
 I really don’t want to know.
 I just had to make sure that I never, ever visit allegro.pl via http.
 
@@ -67,7 +70,7 @@ You can modify it to use with other sites as well.
 A pity that delicious.com does not serve
 all it’s content via some https…
 
-And tumblr.com for that matter.
+And <tt>tumblr.com</tt> for that matter.
 
 
 
