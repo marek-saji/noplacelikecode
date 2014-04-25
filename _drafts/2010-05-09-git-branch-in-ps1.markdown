@@ -7,6 +7,11 @@ tags:
 - ps1
 tumblr_url: http://saji-codes.tumblr.com/post/584783770
 ---
+<ins class=block>
+Update:
+Available as module in <a href="https://github.com/marek-saji/PS1_modules">PS1 modules</a>.
+</ins>
+
 Another nice addition to PS1.
 
 When working on git repositories, it’s great to know what branch you are currently at:
