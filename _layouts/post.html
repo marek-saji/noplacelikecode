@@ -1,35 +1,66 @@
 ---
 layout: default
 ---
-<h2>
-  {% if page.link %}
-    <a href="{{ page.link }}">{{ page.title }}</a>
-  {% else %}
-    {{ page.title }}
-  {% endif %}
-</h2>
-<p class=meta>
-  <time>{{ page.date | date:"%Y-%m-%d" }}</time>
-  {% if page.tags %}
-    <small class=tags>
-      <p>Tags:</p>
-      <ul>
-        {% for tag in page.tags %}
-          <li>#{{tag}}</li>
-        {% endfor %}
-      </ul>
-    </small>
-  {% endif %}
-</p>
+<article class=post>
+  <header class=post__header>
+    <h2 class=post__title>
+      {% if page.link %}
+        <a href="{{ page.link }}">{{ page.title }}</a>
+      {% else %}
+        {{ page.title }}
+      {% endif %}
+    </h2>
+    <p class=post__meta>
+      <time>{{ page.date | date:"%Y-%m-%d" }}</time>
+      {% if page.tags %}
+        <div class=post__tags>
+          <p>Tags:</p>
+          <ul>
+            {% for tag in page.tags %}
+              <li>
+                <a href="/tags.html#{{ tag }}" class=postTag>{{ tag }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+    </p>
+  </header>
 
-<div class="post">
-  {% if page.tumblr_url %}
-    <p class="repost repost__tumblr">
+  <section class=post__content>
+    {% if page.tumblr_url %}
+    <p class="post__repost post__repost--tumblr">
       <small>
         Originally posted at
         <a href="{{ page.tumblr_url }}">saji-codes tumblr</a>.
       </small>
     </p>
-  {% endif %}
-{{ content }}
-</div>
+    {% endif %}
+
+    {{ content }}
+  </section>
+</article>
+
+<nav class=post__pagination>
+  <dl>
+    {% if page.previous.url %}
+      <dt>
+        Previous entry
+      </dt>
+      <dd>
+        <a href="{{page.previous.url}}">{{page.previous.title}}</a>
+      </dd>
+    {% endif %}
+    {% if page.next.url %}
+      <dt>
+        Next entry
+      </dt>
+      <dd>
+        <a href="{{page.next.url}}">{{page.next.title}}</a>
+      </dd>
+    {% endif %}
+    <dt>
+      <a href="/">All entries</a>
+    </dt>
+  </dl>
+</nav>

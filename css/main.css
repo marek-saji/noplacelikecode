@@ -39,127 +39,156 @@
 }
 
 
-/*****************************************************************************/
-/*
-/* Common
-/*
-/*****************************************************************************/
-
-/* Global Reset */
-* {
+html
+{
+  height: 100%;
+  background-color: #fff;
+  font: 1.5em/1.5 'Linux Libertine', serif;
+  text-rendering: optimizeLegibility;
   margin: 0;
   padding: 0;
 }
+body
+{
+  min-height: 100%;
+  margin: 0;
+  padding: 0 1em;
+}
 
-html, body { height: 100%; }
+pre,
+code,
+tt,
+kbd,
+samp
+{
+  font: 0.8em/1.5 'Source Code Pro', monospace;
+}
+pre code,
+pre tt,
+pre kbd,
+pre samp
+{
+  font-size: 1em;
+}
 
-body {
-  background-color: #FFF;
-  font: 13.34px Helvetica, Arial, sans-serif;
-  font-size: small;
+q
+{
+  quotes: "“" "”" "‘" "’";
+}
+
+.header
+{
   text-align: center;
 }
+  .header__title
+  {
+    font-size: 4em;
+    line-height: 1em;
+  }
+    .header__title a
+    {
+      text-decoration: none;
+      color: mediumturquoise;
+    }
+  .header__title,
+  .header__slogan
+  {
+    margin: 0;
+    padding: 0;
+  }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%; }
-
-h1 { margin-bottom: 1em; }
-p { margin: 1em 0; }
-
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
-
-/*****************************************************************************/
-/*
-/* Home
-/*
-/*****************************************************************************/
-.posts {
-  list-style-type: none;
-  margin-bottom: 2em;
-}
-
-.posts li {
-  line-height: 1.75em;
-}
-
-.posts span {
-  color: #aaa;
-  font-family: Monaco, "Courier New", monospace;
-  font-size: 80%;
-}
-
-/*****************************************************************************/
-/*
-/* Site
-/*
-/*****************************************************************************/
-
-.site {
-  font-size: 115%;
-  text-align: justify;
-  width: 42em;
-  margin: 3em auto 2em;
-  line-height: 1.5em;
-}
-
-.header a {
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.title {
-  display: inline-block;
-  margin-bottom: 2em;
-}
-
-.title a {
-  color: #a00;
-}
-
-.title a:hover {
-  color: #000;
-}
-
-.header a.extra {
-  color: #aaa;
-  margin-left: 1em;
-}
-
-.header a.extra:hover {
-  color: #000;
-}
-
-.meta {
-  color: #aaa;
-}
-
-.footer {
-  font-size: 80%;
-  color: #666;
-  border-top: 4px solid #eee;
+.post__header
+{
+  text-align: center;
   margin-top: 2em;
-  overflow: hidden;
+}
+.post__header h2,
+.post__header p
+{
+  margin:  0;
+  padding: 0;
+  line-height: 1;
+}
+.post__title
+{
+  font-size: 5em;
+}
+.post__tags p,
+.post__tags ul,
+.post__tags li
+{
+  display: inline;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+  /**
+   * SR-only
+   */
+  .post__tags p
+  {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+  }
+
+.postTag::before
+{
+  content: '#';
 }
 
-.footer .contact {
-  float: left;
-  margin-right: 3em;
+.post__repost
+{
+  background-color: ivory;
+  border: burlywood solid thin;
+  border-width: thin 0;
+
+  margin:  0.5em -1em;
+  padding: 1em;
 }
 
-.footer .contact a {
-  color: #8085C1;
+.post__pagination dt,
+.post__pagination dd
+{
+  display: inline;
+  margin:  0;
+  padding: 0;
+}
+  .post__pagination dt::before
+  {
+    content: " ";
+    display: table;
+    width: 100%;
+  }
+  .post__pagination dd::before
+  {
+    content: ": ";
+  }
+
+.post__content,
+.archive,
+.footer
+{
+  max-width: 30em;
+  margin: 0 auto;
+  line-height: 2em;
 }
 
-.footer .rss {
-  margin-top: 1.1em;
-  margin-right: -.2em;
-  float: right;
+.footer
+{
+  -webkit-column-width: 14em;
+  -webkit-column-gap:   2em;
+  column-width: 14em;
+  column-gap:   2em;
 }
 
-.footer .rss img {
-  border: 0;
+.archive > ol
+{
+  list-style: disc;
 }
 
 /*****************************************************************************/
@@ -169,33 +198,82 @@ a:visited { color: #a0a; }
 /*****************************************************************************/
 
 /* standard */
-.post pre {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .4em;
-}
 
-.post ul, .post ol {
-  margin-left: 1.35em;
-}
 
-.post code {
-  border: 1px solid #ddd;
+ins
+{
+  background-color: lightcyan;
+}
+  ins.block
+  {
+    display: block;
+    text-decoration: none;
+    border: lightseagreen solid thin;
+    border-width: thin 0;
+    margin: .5em -1em;
+    padding: 1em;
+  }
+
+/**
+ * Code.
+ */
+
+code,
+pre
+{
+  border: thin solid #ddd;
   background-color: #eef;
+}
+pre
+{
+  border-width: thin 0;
+}
+code
+{
   padding: 0 .2em;
 }
-
-.post pre code {
+pre > code
+{
   border: none;
+  background-color: transparent;
 }
+
+/**
+ * [1]: Collapse half of margin before and after,
+ * [2]: other half is filled with padding
+ * [3]: If pre is wrapped in .highlight, it handles collapsing
+ * [4]: Grow to the left with long lines, if it's wider than
+ *      calc(50vw + $content-width / 2),
+ *      page will get horizontal scroll
+ */
+pre,
+.highlight
+{
+  /* [1] */
+  margin: -0.75em -1em;
+}
+  pre
+  {
+    /* [4] */
+    display: inline-block;
+    min-width: 100%;
+    /* [2] */
+    padding:  0.75em 1em;
+  }
+    .highlight > pre
+    {
+      /* [3] */
+      margin: 0;
+    }
 
 /* terminal */
-.post pre.terminal {
-  border: 1px solid #000;
+pre.terminal
+{
   background-color: #333;
-  color: #FFF;
 }
 
-.post pre.terminal code {
-  background-color: #333;
+pre.terminal
+{
+  border-color: #000;
+  color: #FFF;
 }

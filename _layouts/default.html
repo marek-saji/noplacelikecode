@@ -1,61 +1,63 @@
 <!DOCTYPE html>
 <html prefix="og: http://ogp.me/ns#">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>
-          {% if page.title %}{{ page.title | xml_escape }}{% endif %}
-          {{ site.name | xml_escape }}
-        </title>
-        <meta property=og:title content="
-          {% if page.title %}{{ page.title | xml_escape }}{% endif %}
-          {{ site.name | xml_escape }}
-        " />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>
+      {% if page.title %}{{ page.title | xml_escape }}{% endif %}
+      {{ site.name | xml_escape }}
+    </title>
+    <meta property=og:title content="
+      {% if page.title %}{{ page.title | xml_escape }}{% endif %}
+      {{ site.name | xml_escape }}
+    " />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="alternate" title="Entries" href="http://feeds.feedburner.com/theresNoPlaceLikeCode" type="application/atom+xml" />
+    <link rel="alternate" title="Entries" href="http://feeds.feedburner.com/theresNoPlaceLikeCode" type="application/atom+xml" />
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/main.css">
 
-    </head>
-    <body>
+  </head>
+  <body>
 
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            {% if site.slogan %}
-              <p>
-                {{ site.slogan }}
-              </p>
-            {% endif %}
-          </div>
+    <header class=header>
+      <h1 class=header__title>
+        <a href="/">{{ site.name }}</a>
+      </h1>
+      {% if site.slogan %}
+        <p class=header__slogan>
+          {{ site.slogan }}
+        </p>
+      {% endif %}
+    </header>
 
-          {{ content }}
+    <section class=content>
+      {{ content }}
+    </section>
 
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Marek `saji' Augustynowicz<br />
-                Developer / Designer / Dalek<br />
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/marek-saji">github.com/marek-saji</a><br />
-                <a href="https://twitter.com/saji_">twitter.com/saji_</a><br />
-                <a href="http://bakafoo.com">bakafoo.com</a><br />
-              </p>
-            </div>
-          </div>
-        </div>
+    <footer class=footer>
+      <div class="contact">
+        <p>
+          Marek ‘saji’ Augustynowicz<br />
+          Developer / Designer / Dalek<br />
+        </p>
+      </div>
+      <div class="contact">
+        <p>
+          <a href="https://github.com/marek-saji">github.com/marek-saji</a><br />
+          <a href="https://twitter.com/saji_">twitter.com/saji_</a><br />
+          <a href="http://bakafoo.com">bakafoo.com</a><br />
+        </p>
+      </div>
+    </footer>
 
-        <script src="/js/fragmention.js"></script>
+    <script src="/js/fragmention.js"></script>
 
-        {% include track.html %}
+    {% include track.html %}
 
-    </body>
+  </body>
 </html>

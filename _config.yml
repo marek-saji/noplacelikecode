@@ -1,5 +1,4 @@
-name: "/* there's no place like code */"
-slogan: "Solutions to my problems."
+name: "/* there’s no place like code */"
 markdown: redcarpet
 pygments: true
 url: http://noplacelikecode.redrice.io
