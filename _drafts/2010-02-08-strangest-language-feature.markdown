@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Strangest language feature discussion at StackOverflow
+title: Strangest language feature discussion at Stack­Overflow
 date: '2010-02-08T17:15:00+01:00'
 tags:
 - javascript

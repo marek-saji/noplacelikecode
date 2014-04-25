@@ -1,6 +1,6 @@
 ---
 layout: post
-title: merging subversion repositories
+title: merging sub­version repo­sitories
 date: '2010-02-16T18:48:00+01:00'
 tags:
 - subversion

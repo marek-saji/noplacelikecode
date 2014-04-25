@@ -1,6 +1,6 @@
 ---
 layout: post
-title: snipMate allows to use textmate snippets in vim
+title: snip­Mate allows to use Text­Mate snippets in VIM
 date: '2010-09-17T01:49:41+02:00'
 tags:
 - vim

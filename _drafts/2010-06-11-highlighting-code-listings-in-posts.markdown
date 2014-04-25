@@ -1,6 +1,6 @@
 ---
 layout: post
-title: hightlighting code listings in posts
+title: high­lighting code listings in posts
 date: '2010-06-11T15:04:38+02:00'
 tags:
 - javascript
