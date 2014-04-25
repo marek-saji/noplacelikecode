@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<section class=archive>
+
+  <h2>entries’ tags</h2>
+
+  {% assign max_tag_size = 0 %}
+  {% for tag in site.tags %}
+    {% if tag[1].size > max_tag_size %}
+      {% assign max_tag_size = tag[1].size %}
+    {% endif %}
+  {% endfor %}
+
+  {% for tag_size in (1..max_tag_size) reversed %}
+    {% for tag in site.tags %}
+      {% if tag[1].size == tag_size %}
+        <h3 id="{{ tag[0] }}" class=postTag>{{ tag[0] }}</h3>
+        <ul>
+          {% for post in tag[1] %}
+            <li>
+              <time>{{ post.date | date:"%Y-%m-%d" }}</time>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+</section>
+
