@@ -1,0 +1,127 @@
+.post__repost
+{
+  background-color: ivory;
+  border: burlywood solid thin;
+  border-width: thin 0;
+
+  margin:  0.5em -1em;
+  padding: 1em;
+}
+
+.post__pagination dt,
+.post__pagination dd
+{
+  display: inline;
+  margin:  0;
+  padding: 0;
+}
+  .post__pagination dt::before
+  {
+    content: " ";
+    display: table;
+    width: 100%;
+  }
+  .post__pagination dd::before
+  {
+    content: ": ";
+  }
+
+pre,
+code,
+tt,
+kbd,
+samp
+{
+  font: $font-code;
+}
+pre code,
+pre tt,
+pre kbd,
+pre samp
+{
+  font-size: 1em;
+}
+
+q
+{
+  quotes: "“" "”" "‘" "’";
+}
+
+ins
+{
+  background-color: lightcyan;
+}
+  ins.block
+  {
+    display: block;
+    text-decoration: none;
+    border: lightseagreen solid thin;
+    border-width: thin 0;
+    margin: .5em -1em;
+    padding: 1em;
+  }
+
+/**
+ * Code.
+ */
+
+code,
+pre
+{
+  border: thin solid #ddd;
+  background-color: #eef;
+}
+pre
+{
+  border-width: thin 0;
+}
+code
+{
+  padding: 0 .2em;
+}
+pre > code
+{
+  border: none;
+  background-color: transparent;
+}
+
+/**
+ * [1]: Collapse half of margin before and after,
+ *      FIXME breaks if first / last
+ * [2]: other half is filled with padding
+ * [3]: If pre is wrapped in .highlight, it handles collapsing
+ * [4]: Grow to the left with long lines, if it's wider than
+ *      calc(50vw + $content-width / 2),
+ *      page will get horizontal scroll
+ */
+pre,
+.highlight
+{
+  /* [1] */
+  margin: (- $line-height / 2) -1em;
+}
+  pre
+  {
+    /* [4] */
+    display: inline-block;
+    min-width: 100%;
+    /* [2] */
+    padding: ( $line-height / 2 ) 1em;
+  }
+    .highlight > pre
+    {
+      /* [3] */
+      margin: 0;
+    }
+
+/* terminal */
+pre.terminal
+{
+  background-color: #333;
+}
+
+pre.terminal
+{
+  border-color: #000;
+  color: #FFF;
+}
