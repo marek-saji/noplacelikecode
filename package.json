@@ -1,0 +1,28 @@
+{
+  "name": "noplacelikecode",
+  "version": "0.2.1",
+  "description": "/* there's no place like code */",
+  "main": "index.html",
+  "scripts": {
+    "start": "scss --update scss/:css/ ; jekyll serve",
+    "test": "scss --watch scss/:css/ & jekyll serve --watch --drafts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/marek-saji/noplacelikecode.git"
+  },
+  "keywords": [
+    "blag",
+    "blog",
+    "saji-thinks",
+    "noplacelikecode",
+    "theresnoplacelikecode",
+    "thereisnoplacelikecode"
+  ],
+  "author": "Marek ‘saji’ Augustynowicz",
+  "license": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International",
+  "bugs": {
+    "url": "https://github.com/marek-saji/noplacelikecode/issues"
+  },
+  "homepage": "http://noplacelikecode.redrice.io"
+}
