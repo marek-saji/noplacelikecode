@@ -4,7 +4,6 @@ title: merging sub­version repo­sitories
 date: '2010-02-16T18:48:00+01:00'
 tags:
 - subversion
-- vcs
 tumblr_url: http://saji-codes.tumblr.com/post/393051138
 ---
 

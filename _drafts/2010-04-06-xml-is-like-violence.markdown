@@ -3,7 +3,6 @@ layout: post
 title: XML is like violence
 date: '2010-04-06T02:18:54+02:00'
 tags:
-- xml
 - quote
 tumblr_url: http://saji-codes.tumblr.com/post/499335236
 ---

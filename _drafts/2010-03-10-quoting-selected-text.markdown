@@ -5,7 +5,6 @@ date: '2010-03-10T05:03:09+01:00'
 tags:
 - javascript
 - ui
-- selection
 tumblr_url: http://saji-codes.tumblr.com/post/438224962
 ---
 ```js

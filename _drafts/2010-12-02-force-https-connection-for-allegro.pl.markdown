@@ -4,7 +4,6 @@ title: Force HTTPS conn­ection for allegro.pl
 date: '2010-12-02T23:06:00+01:00'
 tags:
 - security
-- ssl
 tumblr_url: http://saji-codes.tumblr.com/post/2074488121
 ---
 <ins class=block>
