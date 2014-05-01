@@ -66,7 +66,7 @@ Create new virtual host in apache:
 
 And voilà.
 You can modify it to use with other sites as well.
-A pity that delicious.com does not serve
+A pity that <tt>delicious.com</tt> does not serve
 all it’s content via some https…
 
 And <tt>tumblr.com</tt> for that matter.
