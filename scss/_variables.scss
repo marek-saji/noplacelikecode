@@ -5,6 +5,15 @@ $font-main: 1em   Linux Libertine, serif;
 $font-code: 0.9em Source Code Pro, monospace;
 
 $brand-colour: #900;
+$text-colour: black;
+$secondary-text-colour: #555;
+$link-colour: #3636E2;
+$link-underline-colour: $link-colour;
+$link-visited-colour: #9B3D9B;
+$link-visited-underline-colour: $link-visited-colour;
+$link-active-colour: red;
+$link-active-underline-colour: $link-active-colour;
+
 $code-bg: 0;
 $code-fg: 0;
 $term-bg: 0;

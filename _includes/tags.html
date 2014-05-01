@@ -1,0 +1,12 @@
+{% if page.tags %}
+  <div class=post__tags>
+    <p>Tags:</p>
+    <ul>
+      {% for tag in page.tags %}
+        <li>
+          <a href="/tags.html#{{ tag }}" class=postTag>{{ tag }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endif %}

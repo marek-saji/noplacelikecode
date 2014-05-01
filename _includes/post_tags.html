@@ -1,0 +1,16 @@
+{% if include.tags %}
+  <div class=post__tags>
+    <p>Tags:</p>
+    <ul>
+      {% for tag in include.tags %}
+        <li>
+          {% if include.linkify %}
+            <a href="/tags.html#{{ tag }}" class=hashtag>{{ tag }}</a>
+          {% else %}
+            <span class=hashtag>{{ tag }}</span>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endif %}

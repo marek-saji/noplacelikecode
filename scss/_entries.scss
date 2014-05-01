@@ -5,7 +5,14 @@
   border-width: thin 0;
 
   margin:  0.5em -1em;
-  padding: 1em;
+  padding: 0 1em;
+
+  & > small
+  {
+    display: block;
+    font-size: 0.8em;
+    margin: 0.5em 0;
+  }
 }
 
 .post__pagination dt,
@@ -103,6 +110,7 @@ pre,
   pre
   {
     /* [4] */
+    display: block;
     display: inline-block;
     min-width: 100%;
     /* [2] */

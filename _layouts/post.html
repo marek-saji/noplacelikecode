@@ -10,31 +10,22 @@ layout: default
         {{ page.title }}
       {% endif %}
     </h2>
-    <p class=post__meta>
-      <time>{{ page.date | date:"%Y-%m-%d" }}</time>
-      {% if page.tags %}
-        <div class=post__tags>
-          <p>Tags:</p>
-          <ul>
-            {% for tag in page.tags %}
-              <li>
-                <a href="/tags.html#{{ tag }}" class=postTag>{{ tag }}</a>
-              </li>
-            {% endfor %}
-          </ul>
-        </div>
-      {% endif %}
-    </p>
+    <div class=post__meta>
+      <p>
+        <time>{{ page.date | date:"%Y-%m-%d" }}</time>
+        </p>
+      {% include post_tags.html tags=page.tags linkify=true %}
+    </div>
   </header>
 
   <section class=post__content>
     {% if page.tumblr_url %}
-    <p class="post__repost post__repost--tumblr">
-      <small>
-        Originally posted at
-        <a href="{{ page.tumblr_url }}">saji-codes tumblr</a>.
-      </small>
-    </p>
+      <p class="post__repost post__repost--tumblr">
+        <small>
+          Originally posted at
+          <a href="{{ page.tumblr_url }}">saji-codes tumblr</a>.
+        </small>
+      </p>
     {% endif %}
 
     {{ content }}
@@ -63,4 +54,10 @@ layout: default
       <a href="/">All entries</a>
     </dt>
   </dl>
+</nav>
+
+<nav class=post__related>
+  <h3>Related entries</h3>
+
+  {% include post_list.html posts=site.related_posts limit=3 %}
 </nav>

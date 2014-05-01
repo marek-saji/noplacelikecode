@@ -1,0 +1,7 @@
+<li>
+  <time>{{ include.post.date | date:"%Y-%m-%d" }}</time>
+  <a href="{{ include.post.url }}">{{ include.post.title }}</a>
+  {% if include.renderNoTags != true %}
+    {% include post_tags.html tags=include.post.tags linkify=include.linkifyTags renderTags=include.renderTags %}
+  {% endif %}
+</li>
