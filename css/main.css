@@ -95,13 +95,18 @@ body {
       font-size: 5.5em; } }
 
 .header__title a {
-  /** Overwrite `.backgroundimage a` styles */ }
+  /** Overwrite `.backgroundimage a` styles */
+  /** underline text (not the comments brackets) on hover */ }
   .header__title a, .background-image .header__title a {
     text-decoration: none;
     background-image: none;
     color: #990000; }
-  .background-image .header__title a:hover, .background-image .header__title a:focus {
+  .background-image .header__title a span {
     background-size: 0.03em 0.03em;
+    background-repeat: repeat-x;
+    /** if >1em will not be visible */
+    background-position: 0 0.975em; }
+  .background-image .header__title a:hover span, .background-image .header__title a:focus span {
     background-image: linear-gradient(to bottom, transparent 50%, #990000 50%); }
 
 .header__title b {

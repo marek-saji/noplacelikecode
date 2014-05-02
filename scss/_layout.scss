@@ -82,11 +82,22 @@ body
         color: $brand-colour;
       }
 
-      .background-image &:hover,
-      .background-image &:focus
+      /** underline text (not the comments brackets) on hover */
+      .background-image &
       {
-        background-size: 0.03em 0.03em;
-        background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, $brand-colour 50%);
+        span
+        {
+          background-size: 0.03em 0.03em;
+          background-repeat: repeat-x;
+          /** if >1em will not be visible */
+          background-position: 0 0.975em;
+        }
+
+        &:hover span,
+        &:focus span
+        {
+          background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, $brand-colour 50%);
+        }
       }
     }
       .header__title b
