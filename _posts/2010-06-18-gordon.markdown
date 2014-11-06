@@ -11,3 +11,11 @@ link: http://github.com/tobeytailor/gordon
 An open source Flash™ runtime written in pure JavaScript.
 
 Not yet production quality, but… wow.
+
+<ins class=block>
+
+While gordon does not seem to be maintained anymore, Mozilla started
+their own JavaScript Flash™ runtime project
+— <a href="https://github.com/mozilla/shumway">shumway</a>.
+
+</ins>
