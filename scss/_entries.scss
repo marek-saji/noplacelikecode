@@ -94,28 +94,31 @@ pre > code
 
 /**
  * [1]: Collapse half of margin before and after,
- *      FIXME breaks if first / last
  * [2]: other half is filled with padding
- * [3]: If pre is wrapped in .highlight, it handles collapsing
- * [4]: Grow to the left with long lines, if it's wider than
+ * [3]: Grow to the left with long lines, if it's wider than
  *      calc(50vw + $content-width / 2),
- *      page will get horizontal scroll
+ *      page will get horizontal scroll and that's fine
  */
-pre,
-.highlight
+p + .highlight
 {
   /* [1] */
-  margin: (- $line-height / 2) -1em;
+  margin-top:    (- $line-height / 2);
 }
-  pre
+.highlight
+{
+  margin-left: -1em;
+  margin-right: -1em;
+  /* [1] */
+  margin-bottom: (- $line-height / 2);
+
+  > pre
   {
     /* [2] */
     padding: ( $line-height / 2 ) 1em;
 
     @media screen
     {
-      /* [4] */
-      display: block;
+      /* [3] */
       display: inline-block;
       min-width: 100%;
     }
@@ -124,11 +127,7 @@ pre,
       white-space: pre-wrap;
     }
   }
-    .highlight > pre
-    {
-      /* [3] */
-      margin: 0;
-    }
+}
 
 /* terminal */
 pre.terminal
