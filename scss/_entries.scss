@@ -109,12 +109,20 @@ pre,
 }
   pre
   {
-    /* [4] */
-    display: block;
-    display: inline-block;
-    min-width: 100%;
     /* [2] */
     padding: ( $line-height / 2 ) 1em;
+
+    @media screen
+    {
+      /* [4] */
+      display: block;
+      display: inline-block;
+      min-width: 100%;
+    }
+    @media print
+    {
+      white-space: pre-wrap;
+    }
   }
     .highlight > pre
     {
