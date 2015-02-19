@@ -3,3 +3,5 @@ markdown: redcarpet
 highlighter: pygments
 url: http://noplacelikecode.redrice.io
 lsi: true
+sass:
+    sass_dir: styles
