@@ -4,9 +4,10 @@
   "description": "/* there's no place like code */",
   "main": "index.html",
   "scripts": {
-    "start": "scss --update scss/:css/ ; jekyll serve",
+    "prepare": "bundle install",
+    "start": "npm run-script prepare && scss --update scss/:css/ && bundle exec jekyll serve",
     "test": "echo 'No tests' ; false",
-    "dev": "scss --watch scss/:css/ & jekyll serve --watch --drafts"
+    "dev": "npm run-script prepare && scss --watch scss/:css/ & jekyll serve --watch --drafts"
   },
   "repository": {
     "type": "git",
