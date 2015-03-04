@@ -228,10 +228,11 @@ body
 {
   $size: 2em;
 
-  content: '⋯';
+  content: '❧';
   display: block;
   text-align: center;
   color: $secondary-text-colour;
+  font-family: serif;
   font-size: $size;
   margin: $size * 2/3 0;
 }
