@@ -1,6 +1,6 @@
 ---
 layout: post
-title: call methods of objects crated on-the-fly in PHP
+title: call methods of objects crated on-the-fly in <abbr>PHP</abbr>
 date: '2011-03-28T17:58:50+02:00'
 tags:
 - php
@@ -40,4 +40,4 @@ k(array_flip($array), 'key'); // almost like array_flip($array)['key']
 
 ### Update
 
-Newer versions of PHP allows that syntax.
+Newer versions of <abbr>PHP</abbr> allows that syntax.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: css3 everywhere
+title: <abbr>CSS3</abbr> everywhere
 date: '2010-04-07T20:36:00+02:00'
 tags:
 - css

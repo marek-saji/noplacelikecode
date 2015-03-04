@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Force HTTPS conn­ection for allegro.pl
+title: Force <abbr>HTTPS</abbr> conn­ection for allegro.pl
 date: '2010-12-02T23:06:00+01:00'
 tags:
 - security
@@ -8,11 +8,13 @@ tumblr_url: http://saji-codes.tumblr.com/post/2074488121
 ---
 <ins class=block>
   Update:
-  this recipe is deprecated; allegro does not allow to view all pages via <tt>https://ssl.allegro.pl</tt> anymore and just redirects to plain http.
+  this recipe is deprecated; allegro does not allow to view all pages
+  via <tt>https://ssl.allegro.pl</tt> anymore and just redirects to
+  plain http.
 </ins>
 
-With starting to use WiFi on my new laptop I stareted to be a little paranoid.
-I was forcing https connections for some sites with
+With starting to use WiFi on my new laptop I stareted to be a little
+paranoid.  I was forcing https connections for some sites with
 [NoScript].
 While it works great for sites that has http and https set on
 the same domain (google.com, facebook.com, twitter.com),
@@ -24,7 +26,7 @@ allowing session hijacking. But whole content is available
 via <tt>https://ssl.allegro.pl/</tt>.
 
 At first I tried to use
-<q>[Force encryption for all the cookies set over HTTPS..][NoScriptQ6.4]</q>
+<q>[Force encryption for all the cookies set over <abbr>HTTPS</abbr>..][NoScriptQ6.4]</q>
 feature of NoScript, but it did not work — after logging in via https
 (and setting some secure cookies),
 I was logged in in http as well.

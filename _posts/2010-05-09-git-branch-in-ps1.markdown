@@ -1,6 +1,6 @@
 ---
 layout: post
-title: git branch in PS1
+title: git branch in <abbr>PS1</abbr>
 date: '2010-05-09T21:59:00+02:00'
 tags:
 - shell
@@ -9,10 +9,10 @@ tumblr_url: http://saji-codes.tumblr.com/post/584783770
 ---
 <ins class=block>
 Update:
-Available as module in <a href="https://github.com/marek-saji/PS1_modules">PS1 modules</a>.
+Available as module in <a href="https://github.com/marek-saji/PS1_modules"><abbr>PS1</abbr> modules</a>.
 </ins>
 
-Another nice addition to PS1.
+Another nice addition to <abbr>PS1</abbr>.
 
 When working on git repositories, it’s great to know what branch you are currently at:
 
@@ -26,7 +26,11 @@ PS1="\$(PS1_git_branch)$PS1"
 ```
 
 
-I have a git repository in my home directory, so that I can easily sync some config files between all my computers, so I am ignoring that remote. I wanted to ignore git repositories that have root in my home directory, but I did not find any fast way to determine that. Am I missing something?..
+I have a git repository in my home directory, so that I can easily sync
+some config files between all my computers, so I am ignoring that
+remote. I wanted to ignore git repositories that have root in my home
+directory, but I did not find any fast way to determine that. Am I
+missing something?..
 
 
 

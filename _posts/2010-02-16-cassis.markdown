@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CASSIS
+title: <abbr>CASSIS</abbr>
 date: '2010-02-16T19:07:48+01:00'
 tags:
 - javascript

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: vim subshell indicator in PS1
+title: vim subshell indicator in <abbr>PS1</abbr>
 date: '2010-02-18T21:17:38+01:00'
 tags:
 - shell
