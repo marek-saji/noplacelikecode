@@ -40,6 +40,8 @@ kbd,
 samp
 {
   font: $font-code;
+  -webkit-font-feature-settings: normal;
+  font-feature-settings: normal;
 }
 pre code,
 pre tt,

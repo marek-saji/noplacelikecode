@@ -6,6 +6,9 @@ html
   color: $text-colour;
   line-height: $line-height;
   text-rendering: optimizeLegibility;
+  -webkit-font-feature-settings: "onum";
+  font-feature-settings: "onum";
+  font-variant-numeric: oldstyle-nums;
   margin: 0;
   padding: 0;
 
