@@ -56,6 +56,39 @@ q
   quotes: "“" "”" "‘" "’";
 }
 
+blockquote
+{
+    margin: $line-height / 2
+            $line-height / -2;
+    background: aliceblue;
+    padding: 0
+             $line-height / 2;
+    border: #b3b3ff thin;
+    border-style: solid none;
+    position: relative;
+}
+
+blockquote::before,
+blockquote::after
+{
+    color: #b3b3ff;
+    position: absolute;
+    line-height: 1em;
+    font-size: 2.5em;
+}
+blockquote::before
+{
+    content: '“';
+    top:  0.1em;
+    left: 0.1em;
+}
+blockquote::after
+{
+    content: '„';
+    bottom:  0.1em;
+    right: 0.1em;
+}
+
 ins
 {
   background-color: lightcyan;
