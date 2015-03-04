@@ -51,6 +51,12 @@ pre samp
   font-size: 1em;
 }
 
+abbr
+{
+    font-variant: small-caps;
+    text-transform: lowercase;
+}
+
 q
 {
   quotes: "“" "”" "‘" "’";
