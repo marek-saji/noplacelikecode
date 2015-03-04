@@ -28,7 +28,7 @@
     display: table;
     width: 100%;
   }
-  .post__pagination dd::before
+  .post__paginationLabel::after
   {
     content: ": ";
   }
