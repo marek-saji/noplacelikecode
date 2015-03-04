@@ -1,3 +1,10 @@
+$break-point-dates-on-side:   "all and (min-width: 20em)";
+$break-point-dates-full-size: "all and (min-width: 25em)";
+
+$date-width: 5em;
+$small-date-font-size: 0.8em;
+
+
 html
 {
   height: 100%;
@@ -143,26 +150,58 @@ body
 }
 .posts__list
 {
-  $date-width: 5em;
-
   list-style: none;
   padding: 0;
 
   & > li
   {
-    padding-left: $date-width;
+    margin-bottom: 0.5em;
 
     & > time
     {
-      display: inline-block;
-      width: $date-width;
-      margin-left: - $date-width;
+        display: block;
+        line-height: 1em;
+        font-size: $small-date-font-size;
     }
 
     & > .post__tags
     {
       font-size: 0.8em;
     }
+
+    @media #{ $break-point-dates-on-side }
+    {
+        padding-left: $date-width * $small-date-font-size / 1em;
+
+        &::after
+        {
+            clear: both;
+            content: '';
+            display: table;
+            width: 100%;
+        }
+
+        & > time
+        {
+          display: inline-block;
+          float: left;
+          width: $date-width;
+          margin-left: - $date-width;
+          line-height: inherit;
+          position: static;
+        }
+    }
+
+    @media #{ $break-point-dates-full-size }
+    {
+        padding-left: $date-width;
+
+        & > time
+        {
+          font-size: 1em;
+        }
+    }
+
   }
 }
 .post__meta time,
