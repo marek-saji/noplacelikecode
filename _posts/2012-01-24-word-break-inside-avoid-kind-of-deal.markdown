@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ! '`word-break-inside: avoid` kind of deal.'
+title: ! '`word-break-inside: avoid` kind of deal'
 date: '2012-01-24T21:25:00+01:00'
 tags:
 - css
