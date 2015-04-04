@@ -253,12 +253,25 @@ body
   margin: 0 auto;
 }
 
+.content
+{
+  margin-bottom: $line-height;
+}
+
+
 .footer
 {
+  margin-top: 2 * $line-height;
+
   -webkit-column-width: 14em;
   -webkit-column-gap:   2em;
   column-width: 14em;
   column-gap:   2em;
+
+  p
+  {
+    margin-top: 0;
+  }
 
   ul
   {
