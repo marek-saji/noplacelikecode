@@ -29,7 +29,6 @@ body
   padding: 0 1em;
 }
 
-
 /**
  * Use background image gradiet for drawing underlines.
  * This way we can set position and colour
@@ -43,7 +42,12 @@ body
   background-size: 2px 2px;
   /** if >1em will not be visible */
   background-position: 0 0.975em;
-
+  text-shadow: -3px 0 white,
+               -2px 0 white,
+               -1px 0 white,
+               1px 0 white,
+               2px 0 white,
+               3px 0 white;
   &:link
   {
     color: $link-colour;
