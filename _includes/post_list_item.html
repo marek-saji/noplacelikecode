@@ -4,4 +4,7 @@
   {% if include.renderNoTags != true %}
     {% include post_tags.html tags=include.post.tags linkify=include.linkifyTags renderTags=include.renderTags %}
   {% endif %}
+  {% if include.post.draft %}
+    🚧
+  {% endif %}
 </li>
