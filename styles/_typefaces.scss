@@ -5,7 +5,7 @@
   font-style: normal;
   src: local('Linux Libertine Regular'),
        url(//brick.a.ssl.fastly.net/fonts/linuxlibertine/400.woff) format('woff');
-  font-display: fallback;
+  font-display: optional;
 }
 @font-face
 {
@@ -14,7 +14,7 @@
   font-style: italic;
   src: local('Linux Libertine Italic'),
        url(//brick.a.ssl.fastly.net/fonts/linuxlibertine/400i.woff) format('woff');
-  font-display: fallback;
+  font-display: optional;
 }
 @font-face
 {
@@ -23,7 +23,7 @@
   font-weight: 600;
   src: local('Linux Libertine Bold'),
        url(//brick.a.ssl.fastly.net/fonts/linuxlibertine/600.woff) format('woff');
-  font-display: fallback;
+  font-display: optional;
 }
 
 @font-face
@@ -32,7 +32,7 @@
   font-weight: 400;
   font-style: normal;
   src: url(//brick.a.ssl.fastly.net/fonts/sourcecodepro/300.woff) format('woff');
-  font-display: fallback;
+  font-display: optional;
 }
 @font-face
 {
@@ -40,5 +40,5 @@
   font-weight: 600;
   font-style: normal;
   src: local('Source Code Pro'),url(//brick.a.ssl.fastly.net/fonts/linuxlibertine/600.woff) format('woff');
-  font-display: fallback;
+  font-display: optional;
 }
