@@ -29,43 +29,26 @@ body
   padding: 0 1em;
 }
 
-/**
- * Use background image gradiet for drawing underlines.
- * This way we can set position and colour
- * https://medium.com/p/7c03a9274f9
- */
-/*body*/.background-image a
+a
 {
-  text-decoration: none;
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, #666 50%);
-  background-repeat: repeat-x;
-  background-size: 2px 2px;
-  /** if >1em will not be visible */
-  background-position: 0 0.975em;
-  text-shadow: -3px 0 white,
-               -2px 0 white,
-               -1px 0 white,
-               1px 0 white,
-               2px 0 white,
-               3px 0 white;
+  text-decoration-skip-ink: auto;
+
   &:link
   {
     color: $link-colour;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, $link-underline-colour 50%);
+    text-decoration: underline;
+    text-decoration-color: $link-underline-colour;
   }
   &:visited
   {
     color: $link-visited-colour;
-    /* Unfortunatelly, browsers are unwilling to set :visited styles
-     * other than color to avoid stealing visited URLs by malicious
-     * scripts */
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, $link-visited-underline-colour 50%);
+    text-decoration-color: $link-visited-underline-colour;
   }
   &:active,
   &:focus
   {
     color: $link-active-colour;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, $link-active-underline-colour 50%);
+    text-decoration-color: $link-active-underline-colour;
   }
 }
 
@@ -87,31 +70,16 @@ body
   }
     .header__title a
     {
-      /** Overwrite `.backgroundimage a` styles */
-      &,
-      .background-image &
-      {
-        text-decoration: none;
-        background-image: none;
-        color: $brand-colour;
-      }
+      text-decoration: none;
+      color: $brand-colour;
+      text-decoration-color: currentColor;
 
       /** underline text (not the comments brackets) on hover */
-      .background-image &
+      &:hover span,
+      &:focus span
       {
-        span
-        {
-          background-size: 0.03em 0.03em;
-          background-repeat: repeat-x;
-          /** if >1em will not be visible */
-          background-position: 0 0.975em;
-        }
-
-        &:hover span,
-        &:focus span
-        {
-          background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, $brand-colour 50%);
-        }
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
       }
     }
       .header__title b
