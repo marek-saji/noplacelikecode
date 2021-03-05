@@ -2,3 +2,4 @@ _site
 .sass-cache
 Session.vim
 npm-debug.log
+.sync
