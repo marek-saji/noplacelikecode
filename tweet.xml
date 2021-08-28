@@ -11,9 +11,10 @@ layout:
     {% for post in site.posts %}{% if post.tweet %}
     <item>
       <title>{{ post.tweet | xml_escape }}</title>
-      <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+      <pubDate>{{ post.date | date: "%Y-%m-%dT%H:%M:%S%z" }}</pubDate>
       <link>{{ site.url }}{{ post.url }}</link>
       <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+      <id>{{ site.url }}{{ post.url }}</id>
     </item>
     {% endif %}{% endfor %}
   </channel>
