@@ -18,7 +18,7 @@ layout: default
       {% if tag[1].size == tag_size %}
         <h3 id="{{ tag[0] }}" class=hashtag>{{ tag[0] }}</h3>
         {% assign posts = tag[1] %}
-        {% include post_list.html posts=posts renderNoTags=true %}
+        {% include post_list.html posts=posts showTags=false %}
       {% endif %}
     {% endfor %}
   {% endfor %}
@@ -27,7 +27,7 @@ layout: default
   <ol class=posts__list>
     {% for post in site.posts %}
       {% if post.tags.size == 0 %}
-        {% include post_list_item.html post=post renderNoTags=true %}
+        {% include post_list_item.html post=post showTags=false %}
       {% endif %}
     {% endfor %}
   </ol>

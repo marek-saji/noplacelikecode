@@ -1,5 +1,5 @@
 <ol class=posts__list>
   {% for post in include.posts limit:include.limit %}
-    {% include post_list_item.html post=post linkifyTags=include.linkifyTags renderNoTags=include.renderNoTags %}
+    {% include post_list_item.html post=post linkifyTags=include.linkifyTags showTags=include.showTags %}
   {% endfor %}
 </ol>
