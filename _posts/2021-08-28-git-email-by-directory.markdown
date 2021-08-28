@@ -1,6 +1,8 @@
 ---
 title: "Set up different work e–mail in git by directory"
 tweet: "New blog note: How to set up work e-mail for git repos checked out in specific directory"
+tags:
+- git
 ---
 
 For some time now git can include additional config files depending on
