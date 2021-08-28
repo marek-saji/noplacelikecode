@@ -120,6 +120,14 @@ a
   @media all and (min-width: $width-bigger)  { font-size: 5.5em; }
   @media all and (min-width: $width-big-ass) { font-size: 6.5em; }
 }
+
+.posts__ancientDescription
+{
+  display: block;
+  color: #666;
+  line-height: 1.5em;
+}
+
 .posts__list
 {
   list-style: none;

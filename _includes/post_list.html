@@ -1,5 +1,22 @@
+{% assign sawFirstTumblr = false %}
 <ol class=posts__list>
   {% for post in include.posts limit:include.limit %}
+    {% if include.showAncientHeading and sawFirstTumblr == false %}
+      {% if post.tumblr_url %}
+        {% assign sawFirstTumblr = true %}
+</ol>
+
+<h2 class="posts__ancientHeading">Ancient history</h2>
+
+<small class="posts__ancientDescription">
+  Posts imported from
+  <a href="https://saji-codes.tumblr.com/">tumblr</a>.
+  Trigger warning: includes <abbr>PHP</abbr>, jQuery and broken links.
+</small>
+
+<ol class=posts__list>
+      {% endif %}
+    {% endif %}
     {% include post_list_item.html post=post linkifyTags=include.linkifyTags showTags=include.showTags %}
   {% endfor %}
 </ol>
