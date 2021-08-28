@@ -6,7 +6,7 @@
   "scripts": {
     "prepare": "bundle install",
     "start": "npm run-script prepare && bundle exec jekyll serve",
-    "test": "echo 'No tests' ; false",
+    "test": "echo 'No tests (yet)'",
     "dev": "npm run-script prepare && bundle exec jekyll serve --watch --drafts",
     "build": "bundle exec jekyll build"
   },
