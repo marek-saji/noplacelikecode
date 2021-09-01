@@ -25,8 +25,8 @@ your `~/.gitconfig`:
     signingKey = "0123456789ABCDEF"
 ```
 
-If you want to use different e–mail for work stuff, you need to remember
-to set then every time you create or clone a repository:
+If you want to use a different e–mail for work stuff, you need to
+remember to set it every time you create or clone a repository:
 
 ```sh
 git config user.name "Test McTestface"
@@ -36,8 +36,7 @@ git config user.signingKey "FEDCBA9876543210"
 
 _No more!_
 
-We’ll need to add a [conditional include] to our
-`~/.gitconfig`:
+You can add a [conditional include] to your `~/.gitconfig`:
 
 ```ini
 [user]
@@ -49,9 +48,9 @@ We’ll need to add a [conditional include] to our
     path = ./.gitconfig.work
 ```
 
-Then we need to create `~/.gitconfig.work` and put any config you want
-to be used for repositories checked out in `~/src/@example-inc` (or
-it’s subdirectories):
+Then create `~/.gitconfig.work` and put any config you want to be used
+for repositories checked out in `~/src/@example-inc` (or its
+subdirectories):
 
 ```ini
 [user]
