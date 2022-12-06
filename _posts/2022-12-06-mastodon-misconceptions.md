@@ -67,7 +67,7 @@ about the history](https://kind.social/@f00fc7c8/109407989829565640).
 You are in luck. There's an opinion in Mastodon to let your toots be
 deleted after a given time.
 
-### <span id="user-content-clients">So the are different clients?</span>
+### <span id="user-content-clients">So, there are different clients?</span>
 
 Sure. Unlike Twitter, which didn't really like people using non–official
 clients there's healthy ecosystem for Mastodon.
