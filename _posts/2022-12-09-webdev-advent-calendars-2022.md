@@ -1,6 +1,6 @@
 ---
 title: WebDev advent calendars 2022
-tweet: Advent calendars I follow this year. #adventCalendar2022
+tweet: "Advent calendars I follow this year. #adventCalendar2022"
 ---
 Last year I tried to follow too many advent calendars, so naturally I
 more or less stopped reading them after a week or so. This year I'm
