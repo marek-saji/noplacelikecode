@@ -2,6 +2,7 @@
 title: Mastodon misconceptions
 tags:
   - fediverse
+tweet: Some of the things I found myself explaining to people in recent days about #fediverse and #mastodon.
 ---
 
 I’ve collected some of the things I found myself explaining to people in
