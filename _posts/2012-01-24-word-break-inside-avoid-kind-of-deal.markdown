@@ -10,7 +10,7 @@ I’ve spent some time looking for something like `word-break-inside: avoid` (so
 
 Just seemd that’s it’s too trivial thing to use JavaScritpt for that. But actually you can do just that using `display: inline-block`.
 
-<iframe src="http://dabblet.com/gist/11193537" style="width:100%; height:10em">
+<iframe src="https://dabblet.com/gist/11193537" style="width:100%; height:10em">
 
 ```html
 <p>
@@ -26,6 +26,6 @@ Just seemd that’s it’s too trivial thing to use JavaScritpt for that. But ac
 </style>
 ```
 
-<a href="http://dabblet.com/gist/11193537">View the code and result.</a>
+<a href="https://dabblet.com/gist/11193537">View the code and result.</a>
 
 </iframe>

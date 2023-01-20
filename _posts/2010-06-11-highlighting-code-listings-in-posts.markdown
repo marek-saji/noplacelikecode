@@ -15,7 +15,7 @@ This blag have some visitors apparently googling for a way to hightlight code li
 It’s really straight-forward. Just include this JavaScript and CSS:
 
 ```html
-<script type="text/javascript" src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
+<script type="text/javascript" src="https://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
 <link href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css" type="text/css" rel="stylesheet" />
 ```
 

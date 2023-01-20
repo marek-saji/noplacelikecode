@@ -61,6 +61,6 @@ $('article').bind('mouseup', function(e){
 
 
 
-<iframe src="http://jsbin.com/epade3/5" style="width: 100%; height: 30em">
-    <p><a href="http://jsbin.com/epade3/5">view it in action</a></p>
+<iframe src="https://jsbin.com/epade3/5" style="width: 100%; height: 30em">
+    <p><a href="https://jsbin.com/epade3/5">view it in action</a></p>
 </iframe>
