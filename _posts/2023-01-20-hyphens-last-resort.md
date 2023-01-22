@@ -133,7 +133,8 @@ over to a next line.
 
 ## The 2023 solution
 
-Wrap each word in an element that’s `display: inline-block`.
+In addition to adding soft hyphens, wrap each word in an element with
+`display: inline-block`.
 
 This will prefer carrying whole block to the next line before
 hyphenating. Effectively only breaking the word as a last resort -- when
