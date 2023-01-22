@@ -5,6 +5,7 @@ date: '2012-01-24T21:25:00+01:00'
 tags:
 - css
 tumblr_url: http://saji-codes.tumblr.com/post/16420377169
+note: 'See <a href="/2023/01/20/hyphens-last-resort.html">2023 update</a>.'
 ---
 I’ve spent some time looking for something like `word-break-inside: avoid` (sort of an opposite to `<wbr />` — a way to avoid breaking words in a inline element, but do that, if it’s longer than a line, just like page-break-inside: avoid does for pages in print). Turns out there’s none.
 
