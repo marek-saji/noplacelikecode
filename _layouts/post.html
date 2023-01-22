@@ -22,11 +22,16 @@ layout: default
 
   <section class=post__content>
     {% if page.tumblr_url %}
-      <p class="post__repost post__repost--tumblr">
+      <p class="post__note post__note--repost-tumblr">
         <small>
           Originally posted at
           <a href="{{ page.tumblr_url }}">saji-codes tumblr</a>.
         </small>
+      </p>
+    {% endif %}
+    {% if page.note %}
+      <p class="post__note">
+        {{- page.note -}}
       </p>
     {% endif %}
 
