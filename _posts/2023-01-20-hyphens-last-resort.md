@@ -1,8 +1,8 @@
 ---
 title: 'Hyphenate headings as a last resort'
 tweet: 'Hyphenate headings, but only as a last resort. #CSS #hyphens'
-tweetUrl: ''
-tootUrl: ''
+tweetUrl: 'https://twitter.com/saji_/status/1617236283440373762'
+tootUrl: 'https://mastodon.social/@saji/109734413451924204'
 tags:
 - CSS
 # https://codepen.io/marek-saji/full/WNKdrGe
