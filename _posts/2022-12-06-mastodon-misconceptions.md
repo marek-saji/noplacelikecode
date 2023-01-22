@@ -83,8 +83,12 @@ sections or bookmarks, viewing your started toots, but offer logging in
 with multiple instances/accounts and may do a better job of remembering
 position where scrolling your timeline.
 
+Some of the more popular ones:
+
 - [Pinafore](https://pinafore.social) is a different PWA. It has a
   simple and highly accessible interface.
+- [Elk](https://elk.zone/m.webtoo.ls/public/local) is also a PWA with
+  strong Twitter vibes.
 - [Official Mastodon client](https://joinmastodon.org/apps)
   is available for both Android and iOS
 - [Tusky](https://play.google.com/store/apps/details?id=com.keylesspalace.tusky)
