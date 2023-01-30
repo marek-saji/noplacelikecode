@@ -19,7 +19,7 @@ tags:
   }
 </style>
 
-Before I’ve forgotten about blogging for nine years in 2012, my
+Before I forgot about blogging for nine years in 2012, my
 [last post here was about hyphenation][previously]. Surely things
 progressed since then, right?
 
@@ -30,14 +30,14 @@ _Right?_
 ## Need for hyphenation
 
 Most of the time there is no need for hyphenation and text looks fine
-just aligned to the <del>left</del> start. Where it comes
+aligned to the <del>left</del> start[^1]. Where hyphenation comes in
 really handy is **headings**. It’s easy to end up with a heading set in
 a relatively large size and somebody _will_ at some point put a
 very–long–word™ there. Then browsers with narrow viewport will start
-seeing horizontal scrolling or -- <i>gasp!</i> -- your whole page will
-be shrunk to accommodate offending word.
+adding horizontal scrolling or -- <i>gasp!</i> -- your whole page will
+be shrunk to accommodate the offending word.
 
-Let’s start putting some long words in narrow containers and see what
+Ok. Let’s start putting some long words in narrow containers and see what
 happens.
 
 <aside aria-hidden>
@@ -84,9 +84,10 @@ make things just work, but there are a few problems with it:
 1. <q>Uncharacteristically</q> is not hyphenated. What gives?
 
    Turns out currently both Chrome and Firefox disable hyphenation of
-   capitalised words[^1]. This is to avoid performing it on proper
-   nouns. Good intention, but significantly limits usage of it in
-   headings, which usually start with a capitalised word or even have
+   capitalised words[^2]. This is to avoid performing it on proper
+   nouns. Good intention, but it significantly limits usage of
+   hyphenation in
+   headings, which usually starts with a capitalised word or even have
    all of them capitalised.
 
 2. <q>extraordinarily</q> is short enough to fit in a line, but gets
@@ -103,7 +104,7 @@ make things just work, but there are a few problems with it:
 3. Not visible in this example, but browser needs to support hyphenation
    for your language. Check out [`hyphens` browser compatibility table
    on MDN][mdn-hyphens-compat] -- support for non–English is spotty to
-   seat the least (👏 for Firefox).
+   seat the least (<span aria-label="bravo">👏 for</span> Firefox).
 
 ## Soft hyphens
 
@@ -111,7 +112,6 @@ You can instruct browsers of places where words can be broken using
 `&shy;` HTML entity (or `U-00AD` Soft Hyphen character). This takes care
 of capitalised words. As a bonus it also brings hyphenation to browsers
 that don’t support `hyphens: auto` (at all or in your language).
-
 
 Alas, hyphenation is still performed too eagerly. While we like that
 <q>Uncharacteristically</q> is broken into two lines, since it’s longer
@@ -131,9 +131,14 @@ over to a next line.
   </div>
 </div>
 
-## The 2023 solution
+## The solution
 
-In addition to adding soft hyphens, wrap each word in an element with
+Let’s try to address the shortcomings of previous attempts with what we
+have at our disposal in 2023.
+
+You will not like it.
+
+In addition to adding soft hyphens, wrap _each word_ in an element with
 `display: inline-block`.
 
 This will prefer carrying whole block to the next line before
@@ -179,13 +184,24 @@ Note that this will increase weight of your HTML, so probably don’t run
 it everywhere. I’d only do it on headings and other elements that will be
 displayed in a bigger font.
 
-It has a distinct ’90s smell all over it and makes you feel dirty
+This solution definitely
+has a distinct ’90s smell all over it and makes you feel dirty
 when implementing it, but it does work.
 
-[^1]: [<i>Suppress auto-hyphenation for Capitalized words</i> Gecko bug](https://bugzilla.mozilla.org/show_bug.cgi?id=1550532)
+## The future
+
+There is a [discussion on CSS WG about allowing hyphenating capitalised
+words][csswg-control]. With this and
+[`hyphenate-limit-chars`][css-hyphenate-limit-chars] we’ll hopefully get
+a reasonable CSS–only solution in the future.
+
+
+[^1]: Read about [logical properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties).
+[^2]: [Initial discussion that lead to disabling hyphenation for capitalised words in CSS spec](https://github.com/w3c/csswg-drafts/issues/3927).
 
 [previously]: {% post_url 2012-01-24-word-break-inside-avoid-kind-of-deal %}
 [css-hyphens-auto]: https://w3c.github.io/csswg-drafts/css-text/#valdef-hyphens-auto
 [css-hyphenate-limit-chars]: https://w3c.github.io/csswg-drafts/css-text-4/#propdef-hyphenate-limit-chars
 [mdn-hyphens-compat]: https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens#browser_compatibility
 [npm-hyphen]: https://www.npmjs.com/package/hyphen
+[csswg-control]: https://github.com/w3c/csswg-drafts/issues/5157
