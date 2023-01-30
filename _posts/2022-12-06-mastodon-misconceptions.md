@@ -85,7 +85,9 @@ position where scrolling your timeline.
 
 Some of the more popular ones:
 
-- [Pinafore](https://pinafore.social) is a different PWA. It has a
+- <del>[Pinafore](https://pinafore.social)</del>
+  <ins datetime="2023-01-30">[Semaphore](https://semaphore.social)[^1]</ins>
+  is a different PWA. It has a
   simple and highly accessible interface.
 - [Elk](https://elk.zone/m.webtoo.ls/public/local) is also a PWA with
   strong Twitter vibes.
@@ -95,3 +97,5 @@ Some of the more popular ones:
   for Android
 - [Metatext](https://apps.apple.com/us/app/metatext/id1523996615)
   for iOS
+
+[^1]: [Pinafore’s original author stopped maintaining it](https://nolanlawson.com/2023/01/09/retiring-pinafore/). Project got forked as <q>Semaphore</q>.
