@@ -28,7 +28,7 @@ not be moved.
 
 ### “Toot” is a silly name
 
-Agreed. But so is “tweet”, if you think about it. Also, not some
+Agreed. But so is “tweet”, if you think about it. Also, some
 [clients](#user-content-clients) don't use it.
 
 ### How does moderation work (a.k.a. will there be nazis?)
@@ -65,7 +65,7 @@ about the history](https://kind.social/@f00fc7c8/109407989829565640).
 
 ### I don't like Twitter/Mastodon, because it should be casual, writing about nonsense, but it stays in the internet forever. I'll stick with Instagram Stories/TikTok
 
-You are in luck. There's an opinion in Mastodon to let your toots be
+You are in luck. There's an option in Mastodon to let your toots be
 deleted after a given time.
 
 ### <span id="user-content-clients">So, there are different clients?</span>
