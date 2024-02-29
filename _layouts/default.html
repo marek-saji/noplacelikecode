@@ -10,6 +10,7 @@
     {% endcapture %}
     {% capture titleEsc %}
       {{ pageTitle | strip_html | xml_escape | normalize_whitespace }}
+      —
       {{ site.title | xml_escape | normalize_whitespace }}
     {% endcapture %}
     <title>{{ titleEsc }}</title>
@@ -28,11 +29,7 @@
 
     <header class=header>
       <h1 class=header__title>
-        <a href="/">
-          <b>/*</b>
-          <span>there’s no place like code</span>
-          <b>*/</b>
-        </a>
+        <a href="/" class="header__homeLink"><span class="header__homeLinkLabel">{{ site.title }}</span></a>
       </h1>
       {% if site.slogan %}
         <p class=header__slogan>
