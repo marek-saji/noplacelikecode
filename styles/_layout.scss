@@ -72,37 +72,26 @@ a
   @media all and (min-width: $width-big-ass) { font-size: 5.5em; }
 }
 
-a.header__homeLink
+a.header__titleLink
 {
   text-decoration: none;
   color: $brand-colour;
-
-  &::before,
-  &::after
-  {
-    font: $font-code;
-    font-weight: bold;
-  }
-
-  &::before
-  {
-    content: '/*';
-    margin-inline-end: 1ch;
-  }
-
-  &::after
-  {
-    content: '*/';
-    margin-inline-start: 1ch;
-  }
 }
 
-.header__homeLinkLabel
+.header__titleDecoration::before,
+.header__titleDecoration::after
+{
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+}
+
+.header__titleLinkLabel
 {
   text-decoration-color: currentColor;
 
-  .header__homeLink:hover > &,
-  .header__homeLink:focus > &
+  .header__titleLink:hover > &,
+  .header__titleLink:focus > &
   {
     text-decoration: underline;
     text-decoration-thickness: 1px;

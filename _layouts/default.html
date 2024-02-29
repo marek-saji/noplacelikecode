@@ -29,7 +29,17 @@
 
     <header class=header>
       <h1 class=header__title>
-        <a href="/" class="header__homeLink"><span class="header__homeLinkLabel">{{ site.title }}</span></a>
+        <a href="/" class="header__titleLink">
+          <tt
+            aria-hidden=true
+            class="header__titleDecoration"
+          >/*</tt>
+          <span class="header__titleLinkLabel">{{ site.title }}</span>
+          <tt
+            aria-hidden=true
+            class="header__titleDecoration"
+          >*/</tt>
+        </a>
       </h1>
       {% if site.slogan %}
         <p class=header__slogan>
