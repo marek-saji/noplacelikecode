@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    {% capture pageTitle %}
-      {% if page.title %}
-        {% include inline-markdown.html content=page.title %}
-      {% endif %}
-    {% endcapture %}
-    {% capture titleEsc %}
-      {{ pageTitle | strip_html | xml_escape | normalize_whitespace }}
-      —
-      {{ site.title | xml_escape | normalize_whitespace }}
-    {% endcapture %}
+
+    {% capture titleEsc -%}
+      {%- if page.title -%}
+        {%- capture pageTitle -%}
+          {%- include inline-markdown.html content=page.title -%}
+        {%- endcapture -%}
+        {{- pageTitle | strip_html | xml_escape | normalize_whitespace | append: ' — ' -}}
+      {%- endif -%}
+      {{- site.title | xml_escape | normalize_whitespace -}}
+    {%- endcapture -%}
     <title>{{ titleEsc }}</title>
     <meta property=og:title content="{{ titleEsc }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
