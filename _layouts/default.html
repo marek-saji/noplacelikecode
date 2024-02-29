@@ -10,7 +10,7 @@
     {% endcapture %}
     {% capture titleEsc %}
       {{ pageTitle | strip_html | xml_escape | normalize_whitespace }}
-      {{ site.name | xml_escape | normalize_whitespace }}
+      {{ site.title | xml_escape | normalize_whitespace }}
     {% endcapture %}
     <title>{{ titleEsc }}</title>
     <meta property=og:title content="{{ titleEsc }}" />

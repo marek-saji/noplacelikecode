@@ -1,4 +1,4 @@
-name: "/* there’s no place like code */"
+title: "/* there’s no place like code */"
 url: http://noplacelikecode.redrice.io
 include: [".well-known"]
 #lsi: true
