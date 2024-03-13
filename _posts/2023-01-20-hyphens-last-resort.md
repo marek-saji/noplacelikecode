@@ -15,7 +15,6 @@ tags:
     width: 16ch;
     border: 2px dashed #aaa;
     resize: horizontal;
-    overflow-x: scroll;
   }
 </style>
 
