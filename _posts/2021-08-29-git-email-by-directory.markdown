@@ -1,5 +1,5 @@
 ---
-title: "Set up different work e–mail in git by directory"
+title: "Set up different work e﻿–﻿mail in git by directory"
 tweet: "New blog note: How to set up work e-mail for git repos checked out in specific directory"
 tweetUrl: https://twitter.com/saji_/status/1431741622652440576
 tags:
