@@ -1,16 +1,13 @@
 {% if include.tags and include.tags.size > 0 %}
-  <div class=post__tags>
-    <p>Tags:</p>
-    <ul>
-      {% for tag in include.tags %}
-        <li>
-          {% if include.linkify %}
-            <a href="/tags.html#{{ tag }}" class=hashtag>{{ tag }}</a>
-          {% else %}
-            <span class=hashtag>{{ tag }}</span>
-          {% endif %}
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
+  <ul class="post__tagsList" aria-label="Tags">
+    {% for tag in include.tags %}
+      <li class="post__tagsListItem">
+        {% if include.linkify %}
+          <a href="/tags.html#{{ tag }}" class=post__tag>{{ tag }}</a>
+        {% else %}
+          <span class=post__tag>{{ tag }}</span>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
 {% endif %}

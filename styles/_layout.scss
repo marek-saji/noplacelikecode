@@ -153,7 +153,7 @@ a.header__titleLink
         font-size: $small-date-font-size;
     }
 
-    & > .post__tags
+    & > .post__tagsList
     {
       font-size: 0.8em;
     }
@@ -198,20 +198,19 @@ a.header__titleLink
 {
   color: $secondary-text-colour;
 }
-.post__tags,
-.post__tags p,
-.post__tags ul,
-.post__tags li
+.post__tagsList,
+.post__tagsListItem
 {
   display: inline;
   list-style: none;
   margin: 0;
   padding: 0;
 }
-  .post__tags p
-  {
-    @include sr-only();
-  }
+
+.post__tagsList
+{
+  display: inline-block;
+}
 
 .post__content::after
 {
@@ -226,7 +225,7 @@ a.header__titleLink
   margin: $size * 2/3 0;
 }
 
-.hashtag::before
+.post__tag::before
 {
   content: '#';
   opacity: 0.7;
