@@ -1,1 +1,1 @@
-{{ include.content | markdownify | remove: "<p>" | remove: "</p>" }}
+{{- include.content | markdownify | remove: "<p>" | remove: "</p>" | strip -}}

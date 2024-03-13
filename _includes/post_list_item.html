@@ -3,6 +3,7 @@
   <a href="{{ include.post.url }}">
     {%- include inline-markdown.html content=include.post.title -%}
   </a>
+
   {% if include.showTags != false %}
     {%- include post_tags.html tags=include.post.tags linkify=include.linkifyTags -%}
   {% endif %}

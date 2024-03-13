@@ -146,6 +146,11 @@ a.header__titleLink
   {
     margin-bottom: 0.5em;
 
+    & > .post__listItemTitle
+    {
+      margin-inline-end: 0.5ch;
+    }
+
     & > time
     {
         display: block;
