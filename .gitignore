@@ -3,3 +3,4 @@ _site
 Session.vim
 npm-debug.log
 .sync
+package-lock.json
