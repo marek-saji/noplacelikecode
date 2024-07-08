@@ -51,13 +51,6 @@ pre samp
   font-size: 1em;
 }
 
-pre
-{
-  min-width: 100%;
-  width: 100%;
-  width: fit-content;
-}
-
 abbr
 {
     font-variant: small-caps;
@@ -156,49 +149,43 @@ pre > code
  *      calc(50vw + $content-width / 2),
  *      page will get horizontal scroll and that's fine
  */
-.highlight
+pre
 {
+  $horizontal-padding: 0.5em;
+
   margin:
     1em
-    -1em
+    #{-1 * $horizontal-padding}
+    /* [1] */
     -1 * (1em / 2);
+  /* [2] */
+  padding:
+    (1em / 2)
+    #{$horizontal-padding};
+  /* [3] */
+  min-width: 100%;
+  width: 100%;
+  width: fit-content;
 
-  > pre
+  @media print
   {
-    margin: 0;
-    /* [2] */
-    padding:
-      (1em / 2)
-      1em;
-
-    @media screen
-    {
-      /* [3] */
-      display: inline-block;
-      min-width: 100%;
-    }
-    @media print
-    {
-      white-space: pre-wrap;
-    }
+    white-space: pre-wrap;
   }
-}
-p + .highlight
-{
-  /* [1] */
-  margin-top: -1 * (1em / 2);
-}
 
-/* terminal */
-pre.terminal
-{
-  background-color: #333;
-}
+  p + &,
+  p + [class^="language-"] > .highlight > &
+  {
+    /* [1] */
+    margin-top: -1 * (1em / 2);
+  }
 
-pre.terminal
-{
-  border-color: #000;
-  color: #FFF;
+  /* terminal */
+  &.terminal
+  {
+    background-color: #333;
+    border-color: #000;
+    color: #FFF;
+  }
 }
 
 /* headings */
