@@ -6,7 +6,7 @@ tags:
 - enum
 first-draft: 2025-02-24
 tweet: 'You might not need TypeScript enums #typescript #javascript #enum'
-#tootUrl: 'https://mastodon.social/@saji/TODO'
+tootUrl: 'https://mastodon.social/@saji/112724577297759406'
 ---
 With Node.js learning to ignore TypeScript annotations[^1] and TypeScript getting an option that disallows runtime semantics[^2], let’s re–evaluate if we need the most commonly used TypeScript runtime features: **enums**.
 
