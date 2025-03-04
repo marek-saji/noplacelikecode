@@ -218,7 +218,19 @@ a.header__titleLink
   display: inline-block;
 }
 
-.post__content::after
+.post__discuss
+{
+  margin-block-start: 2em;
+  text-align: center;
+  font-style: italic;
+
+  &::before {
+    content: '💬 ';
+    font-style: normal;
+  }
+}
+
+.post::after
 {
   $size: 2em;
 
@@ -245,6 +257,26 @@ a.header__titleLink
 {
   max-width: $content-width;
   margin: 0 auto;
+}
+
+.post__content .footnotes
+{
+  margin-block-start: 1em;
+  font-size: 0.75em;
+
+
+  &::before {
+    display: block;
+    content: '';
+    inline-size: 50%;
+    margin-inline: auto;
+    border-block-start: $secondary-text-colour solid thin;
+  }
+
+  .reversefootnote
+  {
+    font-variant-emoji: text;
+  }
 }
 
 .content

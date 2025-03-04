@@ -36,6 +36,12 @@ layout: default
     {% endif %}
 
     {{ content }}
+
+    {%- if page.tootUrl -%}
+      <p class=post__discuss>
+        Discuss this post on <a href="{{page.tootUrl}}">Mastodon</a>.
+      </p>
+    {%- endif -%}
   </section>
 </article>
 
